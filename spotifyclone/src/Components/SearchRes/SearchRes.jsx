@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const SearchRes = () => {
     const [show, setshow]= useState(false)
-    const icon = "<="
+    
   return (
     <div className='search' >
         <div className="search-box flex">
