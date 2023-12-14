@@ -1,0 +1,305 @@
+body{
+    background-color: rgba(217, 217, 217, 1);
+}
+header nav{
+    display: flex;
+}
+.left-brand{
+    width: 36%;
+}
+.brand-img{
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+    display: flex;
+}
+.brand-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    margin: 4px;
+}
+.middle-men{
+    width: 44%;
+    padding-top: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.middle-men input{
+    outline: none;
+    border: 1px solid black;
+    width: 180px;
+    height: 20px;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 2% 34%;
+    background-image: url(../images/magnifying-glass.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    box-shadow: 1px 2px 6px black;
+}
+.right-items{
+    width: 20%;
+    display: flex;
+    padding-top:14px ;
+    align-items: baseline;
+    justify-content: center;
+}
+.notifications{
+    width: 44px;
+    height: 44px;
+    margin: 4px 12px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.account{
+    width: 44px;
+    height: 44px;
+    margin: 4px 12px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.account img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.notifications img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.section{
+    background-color: rgba(88, 60, 60, 1);
+    width: 98%;
+    margin: 3% auto;
+    height: 80vh;
+    border-radius: 8px;
+    padding-top: 4%;
+    border-bottom: 0;
+    margin-bottom: 2px;
+}
+.innnersec{
+    background-color: rgba(217, 217, 217, 1);
+    height: 52%;
+    width: 96%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+}
+.flexitem-ablbum-slide{
+    display: flex;
+    width: 96%;
+    overflow-x: scroll;
+    padding: 0 12px;
+}
+.album{
+    min-width: 180px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 12px;
+}
+.album-img{
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    border-bottom:0 ;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.album-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(217, 217, 217, 1);
+}
+.album-name{
+    width:98px ;
+    height: 22px;
+    background-color: white;
+    margin: auto;
+    word-wrap: break-word;
+    border-radius: 4px;
+}
+.flexitem-ablbum-slide{
+    display: flex;
+}
+.sidebar{
+    background-color: black;
+    height: 100%;
+    top: 4px;
+    border-radius: 8px;
+    width: 340px;
+    position: absolute;
+    padding: 12px;
+}
+.d-none{
+    display: none;
+}
+footer{
+    bottom: 0;
+    position: sticky;
+    width: 98%;
+    margin: auto;
+    height: 12vh;
+    margin-bottom: 8px;
+    background-color: black;
+    border-radius: 8px;
+}
+.remover{
+    position: relative;
+    cursor: pointer;
+    
+}
+.profile-user-sidebar{
+    width: 120px;
+    background-color: grey;
+    height: 120px;
+    border-radius: 100%;
+    margin: 22px auto;
+    outline: 1px solid grey;
+    padding: 2px;
+}
+.profile-user-sidebar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.side-bar-menue{
+    background-color: grey;
+    width: 80%;
+    margin: auto;
+    margin-right: 44px;
+    height: 48%;
+    border-radius: 4px;
+    padding: 24px 0;
+    /* padding-right: 12px; */
+}
+.option{
+    border: 1px solid white;
+    width: 220px;
+    list-style: none;
+    height: 38px;
+    padding: 4px;
+    margin: 12px auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.logout{
+    bottom: 0;
+    color: red;
+}
+.player-prog{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
+}
+.player-prog input{
+    width: 100%;
+    height: 4px;
+}
+.controls{
+    display: flex;
+    width: 20%;
+}
+.control-icons{
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    margin: auto 12px;
+    border-radius: 100%;
+    padding: 6px;
+
+}
+.controls img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.controlplay{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.player-control{
+    display: flex;
+}
+.user-id{
+    /* border: 1px solid white; */
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.user-id h3{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+.item-name{
+    width: 60%;
+}
+.item-btn{
+    border: 1px solid black;
+    width: 24%;
+    height: 64%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22px;
+    margin-top: 8px;
+}
+.off-btn{
+    width: 50%;
+    position: relative;
+    height: 94%;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50px;
+    border: 0;
+}
+.on-btn{
+    width: 50%;
+    position: relative;
+    height: 94%;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50px;
+    border: 0;
+}
+.runner-btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 0;
+    margin-right: 8.5%;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.runner-btn-on{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 0;
+    margin-left: 8.5%;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.remove{
+    display: none;
+}

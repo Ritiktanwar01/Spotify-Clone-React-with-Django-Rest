@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Spotify</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-brand">
+                <div class="brand-img">
+                    <img src="./images/logo.jpg" alt=""><span>
+                        <h2>Spotify</h2>
+                    </span>
+                </div>
+            </div>
+            <div class="middle-men">
+                <div class="input-box-search">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="right-items">
+                <div class="notifications">
+                    <img src="./images/bell.png" alt="">
+                </div>
+                <div class="account">
+                    <img src="./images/profile-user.png" alt="" onclick="sidebar()" id="profile-user">
+                </div>
+                <div class="sidebar d-none" id="sidebar">
+                    <button id="remover" class="remover" onclick="remover()">x</button>
+                    <div class="profile-user-sidebar">
+                        <img src="./images/profile-user.png" alt="">
+                    </div>
+                    <div class="user-id">
+                        <h3>Ritik</h3>
+                    </div>
+                    <div class="side-bar-menue">
+                        <div class="option-list">
+                            <div class="option">
+                                Security
+                            </div>
+                            <div class="option flex">
+                                <div class="item-name">
+                                    Dark/Day
+                                </div>
+                                <div class="item-btn">
+                                    <button class="off-btn" onclick="darkmodeoff()"></button>
+                                    <button class="runner-btn" id="runnerBtn" onclick="darkmodeoff()"></button>
+                                    <button class="on-btn" id="themeWhiteOn" onclick="darkmodeon()"></button>
+                                </div>
+                            </div>
+                            <div class="option">
+                                Downloads
+                            </div>
+                            <a class="logout" draggable="true" href="#">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="section">
+        <div class="innnersec">
+            <div class="album-stat">
+                <h3>Latest Albums</h3>
+            </div>
+            <div class="side-slide-albums">
+                <div class="flexitem-ablbum-slide">
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./images/7.jpg" alt="">
+                        </div>
+                        <div class="album-name">
+                            <h4>BACK IT UP</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="player-control">
+            <p id="durationmedia" style="color: white; text-align: center; margin-top: 24px;"></p>
+            <div class="player-prog">
+                <input type="range" name="" id="" value="0">
+            </div>
+            <div class="controls">
+                <div class="control-icons" style="display: flex;">
+                    <img src="./images/play.png" class="controlplay" alt="" id="playerbtn" onclick="playerplay()">
+                    <img src="./images/pause.png" class="controlpause remove" alt="" id="playerbtnpause" onclick="playerpause()">
+                </div>
+                <div class="control-icons">
+                    <img src="./images/previous.png" alt="">
+                </div>
+                <div class="control-icons">
+                    <img src="./images/next.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function sidebar() {
+            document.getElementById("sidebar").classList.remove("d-none")
+        }
+        function remover() {
+            document.getElementById("sidebar").classList.add("d-none")
+        }
+        function darkmodeon(){
+            let onBtn = document.getElementById("runnerBtn")
+            onBtn.classList.toggle("runner-btn")
+            onBtn.classList.toggle("runner-btn-on")
+        }
+        function darkmodeoff(){
+            let onBtn = document.getElementById("runnerBtn")
+            onBtn.classList.toggle("runner-btn")
+            onBtn.classList.toggle("runner-btn-on")
+        }
+    </script>
+</body>
+
+</html>
