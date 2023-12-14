@@ -6,7 +6,7 @@ const AlbumSingle = (props) => {
       <div className="album-img">
         <img src={props.image} alt="" />
       </div>
-      <div className="album-name">
+      <div className="album-name" style={{textAlign:'center'}}>
         <h4>{props.tittle}</h4>
       </div>
     </div>

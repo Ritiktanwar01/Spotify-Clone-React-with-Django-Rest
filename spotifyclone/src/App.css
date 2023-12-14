@@ -1,6 +1,10 @@
 body{
   background-color: rgba(217, 217, 217, 1);
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 header{
   height: 10vh ;
 }
@@ -146,11 +150,13 @@ header nav{
 }
 footer{
   bottom: 0;
+  margin: auto;
+  margin-top: -80px;
   position: sticky;
   width: 98%;
-  margin: auto;
+  /* margin: auto; */
   height: 12vh;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   background-color: black;
   border-radius: 8px;
 }
@@ -311,6 +317,59 @@ footer{
   height: 480px;
   border-radius: 8px;
   margin: 44px;
+}
+.notifications-box img{
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  margin: 18px 42%;
+  cursor: pointer;
+}
+.search{
+  margin: 28px auto;
+  width: 90%;
+  border: 1px solid black;
+  height: 96vh;
+  border-radius: 8px;
+  padding: 12px;
+}
+.filters{
+  width: 80%;
+}
+.form-box {
+  display: flex;
+  width: 20%;
+}
+.selector{
+  width: 168px;
+  text-align: center;
+  margin: 0 20px;
+  padding: 6px 8px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.form-box-inp{
+  width: 220px;
+  padding: 4px 12px;
+  height: 22px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 4px;
+}
+.history{
+  width: 232px;
+  border-radius: 8px;
+  height: 180px;
+  border: 1px solid black;
+  position: absolute;
+  top: 140px;
+  overflow-y: scroll;
+}
+.search-box-main{
+  width: 100%;
+  margin: 22px 0;
+  height: 88vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
