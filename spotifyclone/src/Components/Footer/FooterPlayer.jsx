@@ -3,20 +3,20 @@ import React from 'react'
 const FooterPlayer = () => {
   return (
     <footer>
-        <div class="player-control">
+        <div className="player-control">
             <p id="durationmedia" style={{color: 'white', textAlign: 'center', marginTop: '24px'}}></p>
-            <div class="player-prog">
+            <div className="player-prog">
                 <input type="range" name="" id="" />
             </div>
-            <div class="controls">
-                <div class="control-icons" style={{display: 'flex'}}>
-                    <img src="./images/play.png" class="controlplay" alt="" id="playerbtn" onclick="playerplay()" />
-                    <img src="./images/pause.png" class="controlpause remove" alt="" id="playerbtnpause" onclick="playerpause()"/>
+            <div className="controls">
+                <div className="control-icons" style={{display: 'flex'}}>
+                    <img src="./images/play.png" className="controlplay" alt="" />
+                    <img src="./images/pause.png" className="controlpause remove" alt=""/>
                 </div>
-                <div class="control-icons">
-                    <img src="./images/previous.png" alt="" />
+                <div className="control-icons">
+                    <img src="./images/previous.png" alt=""/>
                 </div>
-                <div class="control-icons">
+                <div className="control-icons">
                     <img src="./images/next.png" alt="" />
                 </div>
             </div>
