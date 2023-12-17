@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const AlbumSingle = (props) => {
-  const player = () =>{
-    const song = new Audio('http://127.0.0.1:8000/' + props.songlink)
-    song.play()
-  }
+  const Navigate = useNavigate()
+  const [playlistuuid,setplaylistuuid] = useState()
+  function handleSelect(){
+    Navigate('/playlist', {
+      state: {
+        playlistName:props.tittle,
+        playlistid:props.playlistuid,
+      }
+    });
+  };
   return (
-    <div className="album" onClick={player}>
+    <div className="album" onClick={handleSelect}>
       <div className="album-img">
         <img src={'http://127.0.0.1:8000/'+props.image} alt="" />
       </div>

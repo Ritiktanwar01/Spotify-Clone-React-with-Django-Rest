@@ -81,7 +81,19 @@ header nav{
 }
 .section{
   background-color: rgba(88, 60, 60, 1);
-  width: 98%;
+  width: 98.9%;
+  margin: 3% auto;
+  height: 90vh;
+  border-radius: 8px;
+  padding-top: 4%;
+  border-bottom: 0;
+  margin-bottom: 2px;
+}
+.sectionflex{
+  display: flex;
+  flex: 1;
+  background-color: rgba(88, 60, 60, 1);
+  width: 98.9%;
   margin: 3% auto;
   height: 90vh;
   border-radius: 8px;
@@ -371,7 +383,112 @@ footer{
   margin: 22px 0;
   height: 88vh;
 }
+.innnersecplayerleft{
+  background-color: black;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+}
+.innnersecplayerright{
+  background-color: black;
+    height: 80%;
+    width: 30%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+}
+.songsingle{
+  border: 1px solid white;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px;
+}
+.song-image{
+  width: 9%;
+  height: 100%;
+  /* border: 1px solid green; */
+}
+.song-image-round{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 1px solid grey;
+  background-color: white;
+}
+.song-image-round img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  margin: auto;
+}
 
+/* .song-image-round img{
+  width: 100%;
+  height: 100%;
+  /* border-radius: 100%;
+  border: 1px solid grey;
+} */
+.song-name{
+  width: 53%;
+  margin: auto;
+  height: 100%;
+  border-radius: 8px;
+  background-color: white;
+  display: block;
+}
+.song-name table{
+  width: 80%;
+  margin: auto;
+}
+.song-name table td p{
+  margin: 0;
+}
+.song-controls{
+  width: 30%;
+  align-items: center;
+  justify-content: right;
+  display: flex;
+}
+.play-pause-round{
+  background-color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.play-pause-round img{
+  width: 40%;
+}
+.animated-disc{
+  border: 1px solid green;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 40vh;
+}
+.animated-disc-image{
+  width: 76%;
+  border-radius: 100%;
+  height: 90%;
+  border: 1px solid black;
+  animation: infinite;
+}
+.animated-disc-image img{
+  width: 100%;
+  border-radius: 100%;
+  height: 100%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

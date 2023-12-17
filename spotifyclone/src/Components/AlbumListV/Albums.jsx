@@ -7,9 +7,8 @@ const Albums = () => {
   useEffect(()=>{
     async function getdata(){
       try{
-        const newdata =  await axios.get('http://127.0.0.1:8000/songsplayer/songs/')
+        const newdata =  await axios.get('http://127.0.0.1:8000/songsplayer/playlists/')
         setmaindata(newdata.data.list_playlist)
-        // console.log(newdata.data.list_playlist)
       }catch (error){
         console.log(error)
       }
@@ -20,7 +19,7 @@ const Albums = () => {
                 <div className="flexitem-ablbum-slide">
                 { maindata.map((list_playlist, i)=>{
               return (
-                <AlbumSingle key={i} tittle={list_playlist.Song_Name} image={list_playlist.Song_Cover} songlink={list_playlist.Song_File}/>
+                <AlbumSingle key={i} tittle={list_playlist.Play_List_Name} image={list_playlist.Playlist_Cover} playlistuid={list_playlist.unique_id}/>
               )
             })
             }

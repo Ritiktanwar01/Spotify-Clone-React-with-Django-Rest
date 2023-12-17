@@ -3,15 +3,17 @@ from rest_framework.response import Response
 from .serializers import *
 from .models import *
 
-# Create your views here.
+
 @api_view(['GET'])
 def playlistdata(request):
     queryset = playlist.objects.all()
     serializer = serializerplaylist(queryset, many=True)
     return Response({'status':200,'list_playlist':serializer.data})
 
-@api_view(['GET'])
+@api_view(['POST'])
 def songdata(request):
-    queryset = songs.objects.all()
-    serializer = serializersongs(queryset, many=True)
-    return Response({'status':200,'list_playlist':serializer.data})
+    playlistuuid = request.data['playlistuid']
+    findplaylist = playlist.objects.filter(unique_id=playlistuuid).values('id')
+    playlistName = findplaylist[0]['id']
+    songlist = songs.objects.filter(Play_List_Name = playlistName).values('Song_Name','Song_Cover','Song_File')
+    return Response({'status':200,'songlist':songlist})

@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './Components/HomePage/Home'
 import SearchRes from './Components/SearchRes/SearchRes'
-import FooterPlayer from './Components/Footer/FooterPlayer'
+import PlayListDetailPage from './Components/PlayListDetails/PlayListDetailPage'
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='search' element={<SearchRes />} />
+          <Route path='playlist' element={<PlayListDetailPage />} />
         </Routes>
-        <FooterPlayer />
       </BrowserRouter>
     </div>
   )
