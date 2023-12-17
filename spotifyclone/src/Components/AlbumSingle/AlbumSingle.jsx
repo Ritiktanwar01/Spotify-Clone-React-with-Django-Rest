@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const AlbumSingle = (props) => {
+
   const Navigate = useNavigate()
-  const [playlistuuid,setplaylistuuid] = useState()
+  const playlistuid = props.playlistuid
   function handleSelect(){
     Navigate('/playlist', {
       state: {
         playlistName:props.tittle,
-        playlistid:props.playlistuid,
+        playlistid: playlistuid,
       }
     });
   };

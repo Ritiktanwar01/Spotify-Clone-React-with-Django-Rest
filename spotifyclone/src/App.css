@@ -407,6 +407,7 @@ footer{
   border-radius: 8px;
   display: flex;
   padding: 8px;
+  margin: 20px 0;
 }
 .song-image{
   width: 9%;

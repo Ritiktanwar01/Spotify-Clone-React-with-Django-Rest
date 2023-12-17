@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import logo from '../Images/logo.jpg'
+
 import play from '../Images/play.png'
 import pause from '../Images/pause.png'
 
