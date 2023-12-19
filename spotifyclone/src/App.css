@@ -477,21 +477,55 @@ footer{
   align-items: center;
   background-color: white;
   height: 40vh;
+  border-radius: 8px;
 }
 .animated-disc-image{
   width: 76%;
   border-radius: 100%;
   height: 90%;
   border: 1px solid black;
-  animation: infinite;
 }
 .animated-disc-image img{
   width: 100%;
   border-radius: 100%;
   height: 100%;
+  position: relative;
+}
+.music-name{
+  width: 308px;
+  height: 28px;
+  margin: 10px auto;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  border: 1px solid white;
+  border-bottom: 0;
+}
+.music-controls{
+  width: 308px;
+  height: 48px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0px auto;
+  border-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  border: 1px solid white;
+}
+.controls{
+  background-color: white;
+  width: 22px;
+  padding: 8px;
+  height: 22px;
+  border-radius: 100%;
+  margin: 0px 18px;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .animated-disc-image img {
     animation: App-logo-spin infinite 20s linear;
   }
 }

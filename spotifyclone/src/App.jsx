@@ -8,7 +8,7 @@ import PlayListDetailPage from './Components/PlayListDetails/PlayListDetailPage'
 
 function App() {
   return (
-    <div>
+    // <div>
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path='playlist' element={<PlayListDetailPage />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    // </div>
   )
 }
 
